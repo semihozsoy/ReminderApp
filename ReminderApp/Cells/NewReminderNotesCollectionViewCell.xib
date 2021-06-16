@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewReminderNotesCollectionViewCell" id="gTV-IL-0wX" customClass="NewReminderNotesCollectionViewCell" customModule="ReminderApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="332" height="175"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="332" height="175"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbu-qT-iBd">
+                        <rect key="frame" x="0.0" y="0.0" width="332" height="175"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ii-G4-jb9">
+                                <rect key="frame" x="8" y="16" width="310" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Notes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iGr-Qb-IcI">
+                                <rect key="frame" x="8" y="96" width="310" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="iGr-Qb-IcI" secondAttribute="bottom" constant="45" id="CKi-ca-dt5"/>
+                            <constraint firstItem="iGr-Qb-IcI" firstAttribute="leading" secondItem="2ii-G4-jb9" secondAttribute="leading" id="ET5-hq-vsb"/>
+                            <constraint firstItem="2ii-G4-jb9" firstAttribute="leading" secondItem="cbu-qT-iBd" secondAttribute="leadingMargin" id="J0g-TX-nbV"/>
+                            <constraint firstAttribute="height" constant="175" id="LFU-nV-hO2"/>
+                            <constraint firstItem="iGr-Qb-IcI" firstAttribute="top" secondItem="2ii-G4-jb9" secondAttribute="bottom" constant="46" id="Nv9-Dd-JF7"/>
+                            <constraint firstAttribute="width" constant="332" id="TgZ-8q-Bwu"/>
+                            <constraint firstItem="iGr-Qb-IcI" firstAttribute="trailing" secondItem="2ii-G4-jb9" secondAttribute="trailing" id="VIP-hd-kZA"/>
+                            <constraint firstAttribute="trailing" secondItem="2ii-G4-jb9" secondAttribute="trailing" constant="14" id="YPu-Xg-92F"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="cbu-qT-iBd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CXV-Sx-4Ua"/>
+                <constraint firstItem="cbu-qT-iBd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Dv7-FT-kuC"/>
+                <constraint firstAttribute="bottom" secondItem="cbu-qT-iBd" secondAttribute="bottom" id="a75-Ft-ygd"/>
+                <constraint firstAttribute="trailing" secondItem="cbu-qT-iBd" secondAttribute="trailing" id="sae-cy-9UQ"/>
+            </constraints>
+            <size key="customSize" width="332" height="175"/>
+            <connections>
+                <outlet property="newNotesView" destination="cbu-qT-iBd" id="u4f-UO-Xam"/>
+                <outlet property="notesTextField" destination="iGr-Qb-IcI" id="ogv-z6-udf"/>
+                <outlet property="titleTextField" destination="2ii-G4-jb9" id="W4H-2a-b8g"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="81.361607142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
