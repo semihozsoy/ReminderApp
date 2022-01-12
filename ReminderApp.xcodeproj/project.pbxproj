@@ -85,6 +85,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11199EB8278ECBBF00359614 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				11199EBC278ECC1D00359614 /* List */,
+				11199EBB278ECC0D00359614 /* AddList */,
+				11199EBA278ECBF400359614 /* HomePage */,
+				11199EB9278ECBE100359614 /* NewReminder */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		11199EB9278ECBE100359614 /* NewReminder */ = {
+			isa = PBXGroup;
+			children = (
+				11199EC0278ECC4D00359614 /* View */,
+				116F5ACB264EA2AF003685A7 /* NewReminderViewController.swift */,
+			);
+			path = NewReminder;
+			sourceTree = "<group>";
+		};
+		11199EBA278ECBF400359614 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				11199EBF278ECC4700359614 /* View */,
+				116F5AB5264E9C36003685A7 /* HomePageViewController.swift */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		11199EBB278ECC0D00359614 /* AddList */ = {
+			isa = PBXGroup;
+			children = (
+				11199EBE278ECC3D00359614 /* View */,
+				116F5ACD264EA31E003685A7 /* AddListViewController.swift */,
+			);
+			path = AddList;
+			sourceTree = "<group>";
+		};
+		11199EBC278ECC1D00359614 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				11199EBD278ECC3300359614 /* View */,
+				11BE73312655B3D1000F3A35 /* ListViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		11199EBD278ECC3300359614 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11BE73332655B4A0000F3A35 /* EmptyListTableViewCell.swift */,
+				11BE73342655B4A0000F3A35 /* EmptyListTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11199EBE278ECC3D00359614 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11BE732926556D9E000F3A35 /* AddListCollectionViewCell.swift */,
+				11BE732A26556D9E000F3A35 /* AddListCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11199EBF278ECC4700359614 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11A8E1CD2652D44300DD3413 /* MainCategoryCollectionViewCell.swift */,
+				11A8E1CE2652D44300DD3413 /* MainCategoryCollectionViewCell.xib */,
+				11BE732D2655AD3C000F3A35 /* MyListTableViewCell.swift */,
+				11BE732E2655AD3C000F3A35 /* MyListTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11199EC0278ECC4D00359614 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11E38D662652A1F400F2F0F8 /* ListCollectionViewCell.swift */,
+				11E38D672652A1F400F2F0F8 /* ListCollectionViewCell.xib */,
+				11E38D722652A2AF00F2F0F8 /* NewReminderNotesCollectionViewCell.swift */,
+				11E38D732652A2AF00F2F0F8 /* NewReminderNotesCollectionViewCell.xib */,
+				11E38D6A2652A26E00F2F0F8 /* PriorityCollectionViewCell.swift */,
+				11E38D6B2652A26E00F2F0F8 /* PriorityCollectionViewCell.xib */,
+				11E38D6E2652A28E00F2F0F8 /* FlagCollectionViewCell.swift */,
+				11E38D6F2652A28E00F2F0F8 /* FlagCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		116F5AA5264E9C35003685A7 = {
 			isa = PBXGroup;
 			children = (
@@ -105,8 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				11BE732626556B07000F3A35 /* Model */,
-				116F5ACF264EA329003685A7 /* ViewControllers */,
-				116F5AC8264E9EFC003685A7 /* Cells */,
+				11199EB8278ECBBF00359614 /* Scenes */,
 				116F5AB1264E9C36003685A7 /* AppDelegate.swift */,
 				116F5AB3264E9C36003685A7 /* SceneDelegate.swift */,
 				116F5AB7264E9C36003685A7 /* Main.storyboard */,
@@ -116,40 +206,6 @@
 				116F5ABA264E9C36003685A7 /* ReminderApp.xcdatamodeld */,
 			);
 			path = ReminderApp;
-			sourceTree = "<group>";
-		};
-		116F5AC8264E9EFC003685A7 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				11E38D662652A1F400F2F0F8 /* ListCollectionViewCell.swift */,
-				11E38D672652A1F400F2F0F8 /* ListCollectionViewCell.xib */,
-				11E38D6A2652A26E00F2F0F8 /* PriorityCollectionViewCell.swift */,
-				11E38D6B2652A26E00F2F0F8 /* PriorityCollectionViewCell.xib */,
-				11E38D6E2652A28E00F2F0F8 /* FlagCollectionViewCell.swift */,
-				11E38D6F2652A28E00F2F0F8 /* FlagCollectionViewCell.xib */,
-				11E38D722652A2AF00F2F0F8 /* NewReminderNotesCollectionViewCell.swift */,
-				11E38D732652A2AF00F2F0F8 /* NewReminderNotesCollectionViewCell.xib */,
-				11A8E1CD2652D44300DD3413 /* MainCategoryCollectionViewCell.swift */,
-				11A8E1CE2652D44300DD3413 /* MainCategoryCollectionViewCell.xib */,
-				11BE732926556D9E000F3A35 /* AddListCollectionViewCell.swift */,
-				11BE732A26556D9E000F3A35 /* AddListCollectionViewCell.xib */,
-				11BE732D2655AD3C000F3A35 /* MyListTableViewCell.swift */,
-				11BE732E2655AD3C000F3A35 /* MyListTableViewCell.xib */,
-				11BE73332655B4A0000F3A35 /* EmptyListTableViewCell.swift */,
-				11BE73342655B4A0000F3A35 /* EmptyListTableViewCell.xib */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		116F5ACF264EA329003685A7 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				116F5ACB264EA2AF003685A7 /* NewReminderViewController.swift */,
-				116F5AB5264E9C36003685A7 /* HomePageViewController.swift */,
-				116F5ACD264EA31E003685A7 /* AddListViewController.swift */,
-				11BE73312655B3D1000F3A35 /* ListViewController.swift */,
-			);
-			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		11BE732626556B07000F3A35 /* Model */ = {
